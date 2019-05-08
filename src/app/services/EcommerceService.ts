@@ -6,8 +6,8 @@ import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class EcommerceService {
-  private productsUrl = '/api/products';
-  private ordersUrl = '/api/orders';
+  private productsUrl = 'https://spring-webshop.herokuapp.com/api/products';
+  private ordersUrl = 'https://spring-webshop.herokuapp.com/api/orders';
 
   private productOrder: ProductOrder;
   private orders: ProductOrders = new ProductOrders();
