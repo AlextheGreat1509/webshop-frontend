@@ -9,7 +9,7 @@ import {ProductsComponent} from './products/products.component';
   styleUrls: ['./ecommerce.component.css']
 })
 export class EcommerceComponent implements OnInit {
-  private collapsed = true;
+  public collapsed = true;
   orderFinished = false;
 
   @ViewChild('productsC')
