@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Alex Ecommerce</a>
+    <a class="navbar-brand" href="#" (click)="reset()">Alex Ecommerce</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarResponsive" aria-controls="navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation" (click)="toggleCollapsed()">
@@ -17,7 +17,54 @@
     </div>
   </div>
 </nav>
-<div class="row">
+<mdb-carousel [isControls]="true" class="carousel slide" [animation]="'slide'">
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-indigo-light waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown">
+        <h3 class="h3-responsive">Jasper</h3>
+        <p>Is een beetje</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-purple-slight waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown">
+        <h3 class="h3-responsive">Jasper</h3>
+        <p>Ja die is echt een beetje</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <div class="view">
+      <video class="video-fluid" autoplay loop>
+        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+    </div>
+
+    <div class="carousel-caption">
+      <div class="animated fadeInDown">
+        <h3 class="h3-responsive">Jasper</h3>
+        <p>Is echt gewoon niet</p>
+      </div>
+    </div>
+  </mdb-carousel-item>
+</mdb-carousel>
+<div class="row productList">
   <div class="col-md-9">
     <app-products #productsC [hidden]="orderFinished"></app-products>
   </div>

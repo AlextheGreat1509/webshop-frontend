@@ -1,0 +1,26 @@
+/* Full Page Carousel itself*/
+.carousel {
+  height: 25vh;
+}
+
+.carousel .carousel-inner {
+  height: 25vh;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+  height: 25vh;
+}
+.view {
+  height: 25vh;
+}
+img {
+  height: 25vh;
+}
+.d-block {
+   height: 25vh;
+ }
+
+.productList{
+  margin-top: 0.75%;
+}

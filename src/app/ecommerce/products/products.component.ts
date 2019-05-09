@@ -59,7 +59,7 @@ export class ProductsComponent implements OnInit {
         (products: any[]) => {
           this.products = products;
           this.products.forEach(product => {
-            this.productOrders.push(new ProductOrder(product, 0));
+            this.productOrders.push(new ProductOrder(product, 1));
           });
         },
         (error) => console.log(error)

@@ -9,6 +9,7 @@ import {ProductsComponent} from './ecommerce/products/products.component';
 import {ShoppingCartComponent} from './ecommerce/shopping-cart/shopping-cart.component';
 import {OrdersComponent} from './ecommerce/orders/orders.component';
 import {EcommerceService} from './services/EcommerceService';
+import {CarouselModule} from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {EcommerceService} from './services/EcommerceService';
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule
   ],
   providers: [EcommerceService],
   bootstrap: [AppComponent]
